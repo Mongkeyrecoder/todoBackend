@@ -18,5 +18,8 @@ mongoose.connect(mongoURI).then(()=>console.log('mongoose connected'))
 .catch((err)=>{console.log('db connection fail',err)})
 
 app.listen(80,()=>{
-    console.log('server on 5000')
+   
+})
+app.get('/',(req,res)=>{
+   res.send('hello')
 })
